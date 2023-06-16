@@ -1,0 +1,43 @@
+path:
+  dir_name: thyroid
+  dataset: MIP
+
+setup:
+  model_type: nbs
+  batch_size: 32
+  cpus: 4
+  gpus: "2"
+  seed: 831
+  num_epoch: 200
+  phase: test
+  epoch_th: 0
+  num_mc: 5
+  n_a: 1664
+  adv_training: False
+
+module:
+  model:
+    name: densenet169
+    num_classes: 1
+    in_channels: 1
+    dropout_rate: 0.0
+
+  optim:
+    name: Adam
+    lr: 0.0002
+    betas: [0.5, 0.999]
+
+  lr_scheduler:
+    name: CosineAnnealingLR
+    T_max: 200
+
+  loss: [NbsLoss]
+  loss_args:
+    NbsLoss:
+      reduction: mean
+  loss_weight: [1.]
+  val_metric: Accuracy
+  test_metric: Accuracy
+  metric_args:
+    nlabels: 1
+    reduction: none
