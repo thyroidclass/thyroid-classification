@@ -1,8 +1,8 @@
 # thyroid-classification
 
-This repository contains the code for the paper titled "**Machine-learning-based diagnosis of thyroid fine-needle aspiration biopsy synergistically by Papanicolaou staining and refractive index distribution**", published in [*Scientific Reports*](https://doi.org/10.1038/s41598-023-36951-2).
+This repository contains the main code for the paper titled "**Machine-learning-based diagnosis of thyroid fine-needle aspiration biopsy synergistically by Papanicolaou staining and refractive index distribution**", published in [*Scientific Reports*](https://doi.org/10.1038/s41598-023-36951-2).
 
-For sample data used in the paper, please refer to [thyroid-classification-data](https://github.com/thyroiddata2023/thyroid-classification-data).
+For sample data used in the paper, please refer [thyroid-classification-data](https://github.com/thyroiddata2023/thyroid-classification-data).
 
 ## Usage
 
