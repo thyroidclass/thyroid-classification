@@ -1,18 +1,24 @@
 # thyroid-classification
 
-## Training patch-level models
+This repository contains the code for the paper titled "**Machine-learning-based diagnosis of thyroid fine-needle aspiration biopsy synergistically by Papanicolaou staining and refractive index distribution**", published in [*Scientific Reports*](https://doi.org/10.1038/s41598-023-36951-2).
 
-`python3 main.py nbs_BF_5`
+For sample data used in the paper, please refer to [thyroid-classification-data](https://github.com/thyroiddata2023/thyroid-classification-data).
 
-`python3 main.py nbs_MIP_5`
+## Usage
 
-## Cluster-level prediction
+### Patch-level prediction
 
-- Please refer `ClusterPrediction.ipynb`
+```bash
+python3 main.py {nbs_BF_5, nbs_MIP_5}
+```
+
+### Cluster-level prediction
+
+- Please refer [ClusterPrediction.ipynb](ClusterPrediction.ipynb).
 
 ## Pretrained models
 
-Pretrained models can be downloaded using following urls:
+Pretrained model weights can be downloaded on following urls:
 
 - [Patch-level models](https://drive.google.com/file/d/1yy-EfhEG7EHyR2kLNvlo7MbtgOIwygXy/view?usp=sharing) (Both color and RI models)
 
